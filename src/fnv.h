@@ -29,6 +29,7 @@
 #define _UTILS_HASH_FNV_H
 
 #include <stdlib.h>
+#include <stdint.h>
 
 uint64_t hash_fnv1a(const void *bytes, size_t len);
 

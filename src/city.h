@@ -29,6 +29,7 @@
 #define _UTILS_HASH_CITY_H
 
 #include <stdlib.h>
+#include <stdint.h>
 #include <string.h>
 
 uint64_t hash_city64(const void *s, size_t len);

@@ -29,6 +29,7 @@
 #define _UTILS_HASH_MURMUR_H
 
 #include <stdlib.h>
+#include <stdint.h>
 
 uint64_t hash_murmur2_64a(const void *bytes, size_t len);
 
