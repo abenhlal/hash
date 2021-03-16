@@ -96,16 +96,22 @@ static inline uint64_t murmur2_64a(const void *key, int len, uint64_t seed) {
   switch (len & 7) {
     case 7:
       h ^= ((uint64_t)(data2[6])) << 48;
+      __attribute__ ((fallthrough));
     case 6:
       h ^= ((uint64_t)(data2[5])) << 40;
+      __attribute__ ((fallthrough));
     case 5:
       h ^= ((uint64_t)(data2[4])) << 32;
+      __attribute__ ((fallthrough));
     case 4:
       h ^= ((uint64_t)(data2[3])) << 24;
+      __attribute__ ((fallthrough));
     case 3:
       h ^= ((uint64_t)(data2[2])) << 16;
+      __attribute__ ((fallthrough));
     case 2:
       h ^= ((uint64_t)(data2[1])) << 8;
+      __attribute__ ((fallthrough));
     case 1:
       h ^= ((uint64_t)(data2[0]));
       h *= m;
