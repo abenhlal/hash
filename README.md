@@ -36,7 +36,7 @@ $ ./example.bin
 #include <stdio.h>
 #include <stdint.h>
 #include <inttypes.h>
-#include <hash.h>
+#include <cborg/hash.h>
 
 int main() {
   char *data = "hashme";

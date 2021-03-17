@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <inttypes.h>
 
-#include "city.h"
+#include "hash/city.h"
 
 int main() {
   

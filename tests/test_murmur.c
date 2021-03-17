@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <inttypes.h>
 
-#include "murmur.h"
+#include "hash/murmur.h"
 
 int main() {
   

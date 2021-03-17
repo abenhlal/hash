@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <inttypes.h>
 
-#include "fnv.h"
+#include "hash/fnv.h"
 
 int main() {
   

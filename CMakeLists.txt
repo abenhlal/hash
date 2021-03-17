@@ -3,30 +3,12 @@ project(hash VERSION 0.1.0 LANGUAGES C)
 set(CMAKE_C_FLAGS "-std=c99 -Wall -Wextra -pedantic")
 
 include(GNUInstallDirs)
-include_directories(${CMAKE_SOURCE_DIR}/src)
-
-add_library(hash src/city.c src/fnv.c src/murmur.c)
-
-# install
-install(TARGETS hash ARCHIVE DESTINATION lib LIBRARY DESTINATION lib COMPONENT library)
-install(FILES src/hash.h src/city.h src/fnv.h src/murmur.h DESTINATION  ${CMAKE_INSTALL_INCLUDEDIR})
+add_subdirectory(include)
+add_subdirectory(src)
 
 # TEST
-enable_testing()
-# CITY
-add_executable(test_city tests/test_city.c)
-add_test(test_city test_city)
-target_link_libraries(test_city PUBLIC hash)
-
-# FNV
-add_executable(test_fnv tests/test_fnv.c)
-add_test(test_fnv test_fnv)
-target_link_libraries(test_fnv PUBLIC hash)
-
-# MURMUR
-add_executable(test_murmur tests/test_murmur.c)
-add_test(test_murmur test_murmur)
-target_link_libraries(test_murmur PUBLIC hash)
+include(CTest)
+add_subdirectory(tests)
 
 # source: https://gitlab.kitware.com/cmake/community/-/wikis/FAQ#can-i-do-make-uninstall-with-cmake
 if(NOT TARGET uninstall)

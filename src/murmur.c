@@ -40,7 +40,7 @@
 // 2. It will not produce the same results on little-endian and big-endian
 //    machines
 
-#include "murmur.h"
+#include "hash/murmur.h"
 
 #define SEED ((uint64_t)0xcbf29ce484222325ULL)
 

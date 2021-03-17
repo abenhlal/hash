@@ -28,8 +28,8 @@
 #ifndef _UTILS_HASH_H
 #define _UTILS_HASH_H
 
-#include "fnv.h"
-#include "city.h"
-#include "murmur.h"
+#include "hash/fnv.h"
+#include "hash/city.h"
+#include "hash/murmur.h"
 
 #endif
