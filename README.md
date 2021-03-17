@@ -25,7 +25,7 @@ $ sudo make uninstall
 ## Usage and build
 
 ```sh
-$ gcc example.c -o example.bin -lhash
+$ gcc example.c -o example.bin -L/usr/local/lib/cborg -lhash
 $ ./example.bin
 11900548196712136313
 9114364940175044080
