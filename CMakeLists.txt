@@ -3,11 +3,13 @@ project(hash VERSION 0.1.0 LANGUAGES C)
 set(CMAKE_C_FLAGS "-std=c99 -Wall -Wextra -pedantic")
 
 include(GNUInstallDirs)
+include(CTest)
+
+# Build and install
 add_subdirectory(include)
 add_subdirectory(src)
 
 # TEST
-include(CTest)
 add_subdirectory(tests)
 
 # source: https://gitlab.kitware.com/cmake/community/-/wikis/FAQ#can-i-do-make-uninstall-with-cmake
