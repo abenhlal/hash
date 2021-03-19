@@ -25,8 +25,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef _UTILS_HASH_CITY_H
-#define _UTILS_HASH_CITY_H
+#ifndef _CBORG_HASH_CITY_H
+#define _CBORG_HASH_CITY_H
 
 #include <stdlib.h>
 #include <stdint.h>

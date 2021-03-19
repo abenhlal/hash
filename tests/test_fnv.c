@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <inttypes.h>
 
-#include "hash/fnv.h"
+#include "cborg/hash/fnv.h"
 
 int main() {
   

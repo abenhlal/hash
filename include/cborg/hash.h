@@ -25,12 +25,11 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef _UTILS_HASH_FNV_H
-#define _UTILS_HASH_FNV_H
+#ifndef _CBORG_HASH_H
+#define _CBORG_HASH_H
 
-#include <stdlib.h>
-#include <stdint.h>
-
-uint64_t hash_fnv1a(const void *bytes, size_t len);
+#include "cborg/hash/fnv.h"
+#include "cborg/hash/city.h"
+#include "cborg/hash/murmur.h"
 
 #endif

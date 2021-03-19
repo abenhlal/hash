@@ -25,11 +25,12 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef _UTILS_HASH_H
-#define _UTILS_HASH_H
+#ifndef _CBORG_HASH_MURMUR_H
+#define _CBORG_HASH_MURMUR_H
 
-#include "hash/fnv.h"
-#include "hash/city.h"
-#include "hash/murmur.h"
+#include <stdlib.h>
+#include <stdint.h>
+
+uint64_t hash_murmur2_64a(const void *bytes, size_t len);
 
 #endif

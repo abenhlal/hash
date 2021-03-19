@@ -25,12 +25,12 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef _UTILS_HASH_MURMUR_H
-#define _UTILS_HASH_MURMUR_H
+#ifndef _CBORG_HASH_FNV_H
+#define _CBORG_HASH_FNV_H
 
 #include <stdlib.h>
 #include <stdint.h>
 
-uint64_t hash_murmur2_64a(const void *bytes, size_t len);
+uint64_t hash_fnv1a(const void *bytes, size_t len);
 
 #endif

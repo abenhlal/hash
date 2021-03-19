@@ -56,7 +56,7 @@
  * compromising on hash quality.
  */
 
-#include "hash/city.h"
+#include "cborg/hash/city.h"
 
 /*
  * Google City Hash implementation. Based on source code from:
