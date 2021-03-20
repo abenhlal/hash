@@ -28,8 +28,8 @@
 #ifndef _CBORG_HASH_H
 #define _CBORG_HASH_H
 
-#include "cborg/hash/fnv.h"
-#include "cborg/hash/city.h"
-#include "cborg/hash/murmur.h"
+#include <cborg/hash/fnv.h>
+#include <cborg/hash/city.h>
+#include <cborg/hash/murmur.h>
 
 #endif
