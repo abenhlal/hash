@@ -124,6 +124,6 @@ static inline uint64_t murmur2_64a(const void *key, int len, uint64_t seed) {
   return h;
 }
 
-uint64_t hash_murmur2_64a(const void *bytes, size_t len) {
+uint64_t cb_hash_murmur2_64a(const void *bytes, size_t len) {
   return murmur2_64a(bytes, len, SEED);
 }

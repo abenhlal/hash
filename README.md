@@ -1,4 +1,4 @@
-# hash
+# libcborg-hash
 
 ## TODO
 - tests
@@ -25,7 +25,7 @@ $ sudo make uninstall
 ## Usage and build
 
 ```sh
-$ gcc example.c -o example.bin -L/usr/local/lib/cborg -lhash
+$ gcc example.c -o example.bin -L/usr/local/lib/cborg -lcborg-hash
 $ ./example.bin
 11900548196712136313
 9114364940175044080
@@ -41,15 +41,15 @@ $ ./example.bin
 int main() {
   char *data = "hashme";
   // fnv1a
-  uint64_t hfnv = hash_fnv1a(data, 7);
+  uint64_t hfnv = cb_hash_fnv1a(data, 7);
   printf("%"PRIu64"\n",hfnv);
 
   // city
-  uint64_t hc64 = hash_city64(data, 7);
+  uint64_t hc64 = cb_hash_city64(data, 7);
   printf("%"PRIu64"\n",hc64);
 
   // murmur2_64a
-  uint64_t hm64 = hash_murmur2_64a(data, 7);
+  uint64_t hm64 = cb_hash_murmur2_64a(data, 7);
   printf("%"PRIu64"\n",hm64);
 
   return 0;

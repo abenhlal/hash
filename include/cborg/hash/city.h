@@ -32,6 +32,6 @@
 #include <stdint.h>
 #include <string.h>
 
-uint64_t hash_city64(const void *s, size_t len);
+uint64_t cb_hash_city64(const void *s, size_t len);
 
 #endif

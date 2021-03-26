@@ -132,6 +132,6 @@ static inline uint64_t fnv_64a_buf(const void *buf, size_t len, uint64_t hval) {
   return hval;
 }
 
-uint64_t hash_fnv1a(const void *bytes, size_t len) {
+uint64_t cb_hash_fnv1a(const void *bytes, size_t len) {
   return fnv_64a_buf(bytes, len, FNV1A_64_INIT);
 }

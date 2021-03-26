@@ -31,6 +31,6 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-uint64_t hash_fnv1a(const void *bytes, size_t len);
+uint64_t cb_hash_fnv1a(const void *bytes, size_t len);
 
 #endif

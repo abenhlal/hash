@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(hash VERSION 0.1.0 LANGUAGES C)
+project(cborg-hash VERSION 0.1.0 LANGUAGES C)
 set(CMAKE_C_FLAGS "-std=c99 -Wall -Wextra -pedantic")
 
 include(GNUInstallDirs)

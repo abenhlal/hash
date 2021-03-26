@@ -344,7 +344,7 @@ static inline uint64_t CityHash64(const char *s, size_t len) {
 	    HashLen16(v.second, w.second) + x);
 }
 
-uint64_t hash_city64(const void *bytes, size_t len)
+uint64_t cb_hash_city64(const void *bytes, size_t len)
 {
 	return CityHash64(bytes, len);
 }
