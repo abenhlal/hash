@@ -57,7 +57,11 @@ int main() {
 
 ```
 
-## License
+## Licenses
+
+- src/city.c	Google, Inc.	The MIT License
+- src/fnv.c	Authors		Public Domain
+- Others:
 
 Public Domain 2020-2021 Adil Benhlal <adil.benhlal@outlook.fr>
 
